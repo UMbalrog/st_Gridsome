@@ -1,12 +1,13 @@
 {
-  "name": "my_project",
+  "name": "st_gridsome",
   "private": true,
   "scripts": {
-    "develop": "gridsome develop",
+    "dev": "gridsome develop",
     "explore": "gridsome explore",
     "build": "gridsome build"
   },
   "dependencies": {
+    "axios": "^0.21.1",
     "gridsome": "^0.7.0"
   }
 }
