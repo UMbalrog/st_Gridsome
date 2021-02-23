@@ -7,5 +7,13 @@
 module.exports = {
   siteName: '公共title',
   siteDescription: '网站描述',
-  plugins: []
+  plugins: [],
+  templates: {
+    Post: [
+      {
+        path: '/posts/:id',
+        component: './src/templates/Post.vue'
+      }
+    ]
+  }
 }
