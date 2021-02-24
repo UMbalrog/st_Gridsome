@@ -15,5 +15,17 @@ module.exports = {
         component: './src/templates/Post.vue'
       }
     ]
-  }
+  },
+  plugins:[
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        path: './content/blog/**/*.md',
+        typeName: 'BlogPost',
+        remark: {
+          //Config options can be added here
+        }
+      }
+    }
+  ]
 }
